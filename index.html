@@ -10,19 +10,24 @@
 
     <!-- Custom CSS stylesheets loaded -->
     <link rel="stylesheet" href="css/styles.css?v=1.0">
-
 </head>
 <body>
     <div>Incwadi FreeReader</div>
 
+    <div class="content"></div>
+
     <!-- Include 3rd party libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.0.0/jszip.min.js"></script>
-
+    <script src="assets/js/archive.min.js"></script>
+    <script src="assets/js/epub.js"></script>
 
     <!-- Custom Javascript scripts loaded -->
     <script src="js/scripts.js"></script>
 
+    <script type="text/javascript">
+      book = EPUB;
+      $('.content').html(book.open());
+    </script>
 </body>
 </html>
