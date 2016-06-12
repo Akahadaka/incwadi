@@ -1,3 +1,0 @@
-[submodule "assets/zip"]
-	path = assets/zip
-	url = git://github.com/gildas-lormeau/zip.js
